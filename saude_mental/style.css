@@ -29,7 +29,7 @@ header{
 header a{
     text-decoration: none;
     color:var(--turquesa-escuro);
-    font-size: 10rem;
+    font-size: 9rem;
 }
 
 header a:hover{
@@ -37,8 +37,8 @@ header a:hover{
 }
 
 nav a{
-    font-size: 3.5rem;
-    padding-left: 15rem;
+    font-size: 2.5rem;
+    padding-left: 8rem;
 }
 
 nav{
@@ -53,9 +53,55 @@ nav{
     justify-content: flex-start;
    
     display: flex;
-    gap: 2rem;
+    gap: 0rem;
+    
+  }
+
+  #linha{
+    width: 40rem;       /* largura da linha */
+    border: 0;
+    border-bottom: 0.2rem solid var(--turquesa-escuro);
+    margin: 1rem auto;  /* centraliza */
+  }
+
+  #mulherdoheader{
+    padding-right: 17rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 95rem;
+    height: 55rem;
+    transform: translateX(20%); /* faz a imagem ultrapassar o header */
+    top: 4rem;
+  }
+
+  .sec1{
+    display: inline-block;
   }
 
   .sec1 h1{
-    
+    font-size: 7rem;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
   }
+
+  .sec1 h2{
+    font-size: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+  }
+
+  .sec1 button{
+    background-color: var(--turquesa-escuro);
+    color: white;
+    border: none;
+    border-radius: 1.5rem;
+    width: 15rem;
+    height: 5rem;
+    font-size: 2rem;
+    cursor: pointer;
+    display: block;         /* ocupa a linha toda */
+    margin: 0rem auto;      /* centraliza automaticamente */
+  }
+
+  

@@ -5,7 +5,7 @@
 }
 
 .tudo{
-  padding: 0 10rem 0 10rem;
+  padding: 0 5rem 0 5rem;
   margin: auto;
 }
 
@@ -19,13 +19,14 @@ html {
 
 :root{
     --turquesa-escuro: #103b34;
+    --hover: #39867c;
 }
 
 nav{
   justify-content: space-between;
   align-items: center;
   display: flex;
-  gap: 5rem;
+  gap: 2.5rem;
 }
 
 header{
@@ -33,14 +34,18 @@ header{
  justify-content: space-between;
  align-items: center;
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   align-items: baseline;
-  font-size: 4rem;
+  font-size: 2rem;
+}
+
+header a:hover{
+  color: var(--hover);
 }
 
 nav img{
-  width: 6rem;
-  height: 6rem;
+  width: 3rem;
+  height: 3rem;
 }
 
 nav button{
@@ -50,7 +55,7 @@ nav button{
 }
 
 #braintec{
- font-size: 12.8rem; 
+ font-size: 7.5rem; 
 }
 
 
@@ -60,16 +65,15 @@ a{
 }
 
 #imagemMulher{
-  width: 170rem;
-  height: 80rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 100rem;
+  height: 50rem;
+  display: block;
+  margin: 0 auto; /* centraliza horizontalmente */
   
 }
 
 .sec1 h1{
-  font-size: 9.6rem;
+  font-size: 5rem;
   padding-top: 4rem;
   display: flex;
   justify-content: center;
@@ -77,29 +81,29 @@ a{
 }
 
 .sec1 p{
-  font-size: 4rem;
+  font-size: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .sec2 h2{
-  font-size: 8rem;
+  font-size: 4rem;
 }
 
 .sec2 p{
-  font-size: 2.9rem;
+  font-size: 1.5rem;
   padding-top: 1.5rem;
 }
 
 .sec2{
-  padding-top: 10rem;
-  padding-bottom: 10rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .sec2 img{
-  height: 31.6rem;
-  width: 47.4rem;
+  height: 20rem;
+  width: 30rem;
 }
 
 .linha {
@@ -144,8 +148,8 @@ a{
   color: var(--turquesa-escuro);
   border: none;
   border-radius: 0.5rem;
-  width: 20rem;
-  height: 4.8rem;
+  width: 15rem;
+  height: 5rem;
   font-size: 2rem;
   cursor: pointer;
 }
@@ -156,7 +160,7 @@ a{
 }
 
 .sec3 h1{
-  font-size: 9.6rem;
+  font-size: 6rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -164,9 +168,16 @@ a{
 }
 
 .subtitulo{
-  font-size: 4rem;
+  font-size: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.linha{
+  width: 40rem;       /* largura da linha */
+  border: 0;
+  border-bottom: 0.2rem solid white;
+  margin: 1rem auto;  /* centraliza */
 }
 
