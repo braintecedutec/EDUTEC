@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Braintec</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="tudo">
+
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="logo.png" alt="BemViver">
+                <a href="../index.html">
+                    <h2>Braintec</h2>
+                </a>
+                <p>Cuidando de você</p>
+            </div>
+
+            <hr>
+
+            <nav class="menu">
+                <p>navegação</p>
+                <ul>
+                    <li> <img src="../imagens/dashboard.png" alt=""><a href="../dashboard/habitos.html">Dashboard</a>
+                    </li>
+                    <li> <img src="../imagens/humordiario.png" alt=""><a href="#">Humor Diário</a></li>
+                    <li> <img src="../imagens/meushabitos.png" alt=""><a href="#">Meus Hábitos</a></li>
+                    <li> <img src="../imagens/autocuidado.png" alt=""><a href="#">Autocuidado</a></li>
+                    <li> <img src="../imagens/progresso.png" alt=""><a href="#">Progresso</a></li>
+                    <li> <img src="../imagens/tutorial.png" alt=""><a href="#">Tutorial</a></li>
+                </ul>
+            </nav>
+            <div class="dica">
+                <h4>Dica do Dia</h4>
+                <p><strong>Respiração:</strong> Faça 3 respirações profundas agora. Inspire e expire devagar.</p>
+            </div>
+        </aside>
+
+        <main>
+            <header>
+                <h1>Como você está se sentindo?</h1>
+                <p class="data">domingo, 7 de setembro de 2025</p>
+            </header>
+
+            <div class="container">
+
+                <!-- Card Registrar Humor -->
+                <div class="card">
+                    <h2>♡ Registrar Humor</h2>
+
+                    <p>Como você está se sentindo?</p>
+                    <div class="humores">
+                        <div class="humor">
+                            <button>
+                            <p  id="bt1">😞</p><br>
+                            <small>Muito Baixo</small>
+                        </button>
+                        </div>
+                        <div class="humor">
+                            <button>
+                            <p id="bt2">🙁</p><br>
+                            <small>Baixo</small>
+                        </button>
+                        </div>
+                        <div class="humor">
+                            <button >
+                            <p id="bt3">😐</p><br>
+                            <small>Neutro</small>
+                        </button>
+                        </div>
+                        <div class="humor">
+                            <button>
+                            <p id="bt4">🙂</p><br>
+                            <small>Bom</small>
+                        </button>
+                        </div>
+                        <div class="humor">
+                            <button>
+                            <p id="bt5">😃</p><br>
+                            <small>Excelente</small>
+                        </button>
+                        </div>
+                    </div>
+
+                    <div class="sliders">
+                    <div class="slider">
+                        <label>⚡ Nível de Energia: 3</label>
+                        <input type="range" min="1" max="5" value="3">
+                    </div>
+
+                    <div class="slider">
+                        <label>🔥 Nível de Estresse: 3</label>
+                        <input type="range" min="1" max="5" value="3">
+                    </div>
+                </div>
+                    <div class="perguntas">
+                    <label>Pelo que você é grato hoje?</label>
+                    <textarea rows="4" placeholder="  Ex: Pelo café delicioso, pela manhã ensolarada..."></textarea>
+    
+
+                    <label>Observações (opcional)</label>
+                    <textarea rows="4" placeholder="  Como foi seu dia? O que influenciou seu humor?"></textarea>
+
+                    <button class="btn">Registrar Humor</button>
+                </div>
+                </div>
+
+                <!-- Card lateral -->
+                <div class="dica2">
+                    <h3>📖 Dica de Bem-estar</h3>
+                    <strong>🌱 Pratique a Gratidão</strong>
+                    <p>Estudos mostram que pessoas que praticam gratidão regularmente têm níveis mais altos de bem-estar
+                        e satisfação com a vida.</p>
+                </div>
+
+            </div>
+        </main>
+
+    </div>
+</body>
+
+</html>

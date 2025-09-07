@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inria Sans', sans-serif;
+  background-color: var(--branco-esverdeado);
+}
+
+
+html {
+  font-size: 62.5%; /* 62.5% de 16px = 10px */
+}
+
+:root{
+    --turquesa-escuro: #103b34;
+    --hover: #39867c;
+    --verde-claro: #C9EAC1;
+    --verde-meio-claro: #58C79D;
+    --quase-tuquesa: #1E5D56;
+    --branco-esverdeado: #F0FDF4;
+    --amarelo: #F8B52D;
+    --cinza-claro: #eaf3ef;
+    --verde-musgo: #61B33C;
+    --azul: #2CA8A2;
+    --verde-verde: #32A852;
+    --azul-claro: #E8F8F8;
+    --verde-esbranquiçado: #F1FCEF;
+}
+
+.logo a{
+    text-decoration: none;
+}
+hr{
+    width: 100%;
+}
+aside {
+    width: 35rem;
+    background-color: var(--cinza-claro);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border: 0.2rem solid #ccc;
+  }
+  
+  aside h2 {
+    font-size: 2.2rem;
+    color: #2d6a4f;
+  }
+  
+  aside p {
+    font-size: 1.4rem;
+    color: #555;
+  }
+  
+  aside nav ul {
+    list-style: none;
+    margin-top: 1rem;
+  }
+  
+  aside nav ul li {
+    padding: 1.2rem;
+    margin-bottom: 0.8rem;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  aside nav ul li:hover {
+    background-color: #cde5d8;
+  }
+
+  .menu a{
+    text-decoration: none;
+    color: black;
+  }
+
+  
+  .menu img{
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .menu li{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .menu a{
+    font-size: 1.7rem;
+  }
+
+  .menu p{
+    text-transform: uppercase;
+    font-size: 2rem;
+  }
+
+  .dica h4{
+    font-size: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  .dica p{
+    font-size: 1.8rem;
+    background-color: var(--verde-claro);
+    border-radius: 2rem;
+    border: 0.2rem solid var(--verde-meio-claro);
+    padding: 1rem;
+  }
+
+.tudo{
+    display: flex;
+}
+
+main{
+    padding-left: 3rem;
+}
+
+.container{
+    display: flex;
+
+}
+
+
+header{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+header h1{
+    font-size: 4.8rem;
+    color: var(--amarelo);
+}
+
+header p{
+    font-size: 1.7rem;
+}
+
+.card{
+    background-color: white;
+    padding: 2rem;
+    border-radius: 2rem;
+    box-shadow: 0.2rem 0.2rem 0.8rem rgba(0,0,0,0.3);
+}
+
+.card h2{
+    font-size: 2.8rem;
+    padding-bottom: 2rem;
+}
+
+.card p{
+    font-size: 1.8rem;
+    color: var(--turquesa-escuro);
+    padding-bottom: 1rem;
+}
+
+.humores{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 1rem;
+    gap: 2rem;
+}
+
+.humor{
+    border: 0.2rem solid #ccc;
+    border-radius: 2rem;
+    padding: 2rem;
+    padding-right: 2.6rem;
+}
+
+.humor button{
+    cursor: pointer;
+    
+    border-radius: 0.8rem;
+    border: none;
+    background-color: white;
+}
+
+.humor small{
+    color: black;
+    font-size: 1.3rem;
+    color: var(--turquesa-escuro);
+}
+
+.humor p{
+    font-size: 4rem;
+}
+
+.humor:hover {
+    transform: scale(1.15); /* aumenta */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* sombra suave */
+  }
+
+.sliders{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+}
+
+.slider label{
+    font-size: 2rem;
+    margin-bottom: 1rem; 
+}
+
+input[type="range"] {
+    -webkit-appearance: none; /* remove estilo padrão */
+    width: 100%;
+    height: 6px;
+    background: black; /* linha preta */
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  /* Trilho (track) */
+  input[type="range"]::-webkit-slider-runnable-track {
+    height: 6px;
+    background: black;
+    border-radius: 3px;
+  }
+  
+  input[type="range"]::-moz-range-track {
+    height: 6px;
+    background: black;
+    border-radius: 3px;
+  }
+  
+  /* Bolinha (thumb) */
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: white;          /* bolinha branca */
+    border: 2px solid black;    /* borda preta */
+    cursor: pointer;
+    margin-top: -6px; /* centraliza no track */
+  }
+  
+  input[type="range"]::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: white;
+    border: 2px solid black;
+    cursor: pointer;
+  }
+
+    .perguntas{
+        display: grid;
+        
+    }
+  
+    .perguntas label{
+        font-size: 1.8rem;  
+        margin-bottom: 1rem; 
+    }
+
+    .perguntas textarea{
+        border-radius: 1rem;
+    }
+
+    .perguntas ::placeholder{
+        padding-top: 1rem;
+    }
+
+    .perguntas button{
+        cursor: pointer;
+        margin-top: 2rem;
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+        border: none;
+        background-color: var(--amarelo);
+        color: white;
+        border-radius: 1rem;
+        font-size: 1.5rem;
+    }
+  
+    .dica2{
+        background-color: var(--verde-verde);
+        color: white;
+        padding: 2rem;
+        margin-left: 1rem;
+        margin-right: 2rem;
+        border-radius: 2rem;
+        height: fit-content;
+    }
+
+    .dica2 h3{
+        font-size: 3rem;
+        padding-bottom: 3rem;
+        padding-top: 1rem;
+    }
+
+    .dica2 strong{
+        font-size: 2rem;
+    }
+
+    .dica2 p{
+        font-size: 1.8rem;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+    }
