@@ -8,6 +8,7 @@
 body {
   font-family: 'Inria Sans', sans-serif;
   background-color: var(--branco-esverdeado);
+  display: flex;
 }
 
 
@@ -80,10 +81,6 @@ aside {
     color: black;
   }
 
-  .container{
-    display: flex;
-  }
-
   .menu img{
     height: 2rem;
     width: 2rem;
@@ -120,3 +117,108 @@ aside {
     border: 0.2rem solid var(--verde-meio-claro);
     padding: 1rem;
   }
+  .main-content {
+
+    padding: 3rem;
+    flex: 1;
+    display: flex;
+    gap: 2rem;
+  }
+
+  .content {
+    flex: 3;
+  }
+
+  .content h1 {
+    font-size: 7.8rem;
+    color: var(--verde-musgo);
+    margin-bottom: 1rem;
+  }
+
+  .content p {
+    font-size: 1.8rem;
+  }
+
+  .tabs {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem 0;
+  }
+
+  .tabs button {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 0.8rem;
+    background: #fff;
+    cursor: pointer;
+    font-size: 1.6rem;
+  }
+
+  .tabs button.active {
+    background: #dce8e2;
+    font-weight: bold;
+  }
+
+  /* Grid de cards */
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.2rem 0.6rem rgba(0,0,0,0.1);
+    font-size: 1.6rem;
+  }
+
+  .card h3 {
+    margin-top: 0;
+    font-size: 2rem;
+  }
+
+  .completed {
+    color: green;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+
+  /* Sidebar direita */
+  .right-sidebar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: 100vh;
+  }
+
+  .box {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.2rem 0.6rem rgba(0,0,0,0.1);
+    font-size: 1.6rem;
+  }
+
+  .box h4 {
+    margin-top: 0;
+    font-size: 1.8rem;
+  }
+
+  .box.yellow {
+    background: #e5c46f;
+    color: white;
+  }
+
+  .box.green {
+    background: #2e5d48;
+    color: white;
+  }
+
+  .box.green p {
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
+
