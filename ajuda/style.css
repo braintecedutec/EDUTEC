@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inria Sans', sans-serif;
+}
+
+html {
+    font-size: 62.5%; /* 62.5% de 16px = 10px */
+  }
+
+:root{
+    --turquesa-escuro: #103b34;
+    --hover: #39867c;
+    --cinza: #EDEDED;
+}
+
+
+main{
+    padding: 0 5rem;
+}
+
+
+header{
+    padding: 0 5rem;
+}
+
+header a{
+    text-decoration: none;
+    color:var(--turquesa-escuro);
+    font-size: 12rem;
+}
+
+header a:hover{
+    color: var(--hover);
+}
+
+nav a{
+    font-size: 3rem;
+    padding-left: 8rem;
+}
+
+nav{
+    align-items: center;
+    display: flex;
+    gap: 4rem;
+  }
+  
+header{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: flex-start;
+   
+    display: flex;
+    gap: 0rem;
+    
+  }
+
+  #logo{
+    text-transform: uppercase;
+  }
+
+#linha{
+    width: 40rem;       /* largura da linha */
+    border: 0;
+    border-bottom: 0.2rem solid var(--turquesa-escuro);
+    margin: 1rem auto;  /* centraliza */
+  }
+
+
+  #sec1 h1{
+    font-size: 17rem;
+    padding-top: 5rem;
+  }
+
+  #sec1 h2{
+    font-size: 12rem;
+    margin-top: -3rem;
+  }
+
+  #sec1 p{
+    font-size: 4rem;
+  }
+
+  #sec2{
+    padding-top: 5rem;
+  }
+
+  #sec2 h3{
+    font-size: 3rem;
+  }
+
+  #sec2 p{
+    font-size: 1.6rem;
+  }
+
+  #sec2 img{
+    width: 40rem;
+    height: 38rem;
+  }
+
+  #sec2{
+    padding-bottom: 5.5rem;
+  }
+
+  .cima{
+    display: flex;
+    justify-content: center;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    gap: 20rem;
+  }
+  
+  .baixo{
+    display: flex;
+    justify-content: center;
+    gap: 20rem;
+  }
+
+  #sec2 p,h3{
+    text-align: center;
+  }
+
+  
