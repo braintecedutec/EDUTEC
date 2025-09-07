@@ -74,7 +74,7 @@ header{
     position: absolute;
     right: 0;
     bottom: 0;
-    width: 95rem;
+    width: 50rem;
     height: 55rem;
     transform: translateX(20%); /* faz a imagem ultrapassar o header */
     top: 4rem;
@@ -167,7 +167,7 @@ header{
   display: flex;           /* Coloca lado a lado */
   align-items: flex-start; /* Alinha pelo topo */
   gap: 20px;    
-  padding-bottom: 5rem
+  padding-bottom: 5rem;
 }
 
 .textos2 h2{
