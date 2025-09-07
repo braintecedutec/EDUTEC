@@ -10,8 +10,9 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Inria Sans', sans-serif;
 }
+
 
 html {
   font-size: 62.5%; /* 62.5% de 16px = 10px */
@@ -36,7 +37,7 @@ header{
   display: flex;
   gap: 1rem;
   align-items: baseline;
-  font-size: 2rem;
+  font-size: 4rem;
 }
 
 header a:hover{
@@ -55,7 +56,7 @@ nav button{
 }
 
 #braintec{
- font-size: 7.5rem; 
+ font-size: 10rem; 
 }
 
 
@@ -73,7 +74,7 @@ a{
 }
 
 .sec1 h1{
-  font-size: 5rem;
+  font-size: 9rem;
   padding-top: 4rem;
   display: flex;
   justify-content: center;
@@ -81,18 +82,19 @@ a{
 }
 
 .sec1 p{
-  font-size: 2rem;
+  font-size: 2.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .sec2 h2{
-  font-size: 4rem;
+  font-size: 6rem;
+  white-space: nowrap; /* impede quebra de linha */
 }
 
 .sec2 p{
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   padding-top: 1.5rem;
 }
 
@@ -102,8 +104,8 @@ a{
 }
 
 .sec2 img{
-  height: 20rem;
-  width: 30rem;
+  height: 25rem;
+  width: 35rem;
 }
 
 .linha {
@@ -147,11 +149,15 @@ a{
   background-color: white;
   color: var(--turquesa-escuro);
   border: none;
-  border-radius: 0.5rem;
-  width: 15rem;
+  border-radius: 1rem;
+  width: 20rem;
   height: 5rem;
-  font-size: 2rem;
+  font-size: 2.3rem;
   cursor: pointer;
+}
+
+.sec3{
+  padding-bottom: 5.5rem;
 }
 
 .sec3{
@@ -160,7 +166,7 @@ a{
 }
 
 .sec3 h1{
-  font-size: 6rem;
+  font-size: 8rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -168,7 +174,7 @@ a{
 }
 
 .subtitulo{
-  font-size: 2rem;
+  font-size: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -179,5 +185,37 @@ a{
   border: 0;
   border-bottom: 0.2rem solid white;
   margin: 1rem auto;  /* centraliza */
+}
+
+.sec3 img{
+  width: 32rem;
+  max-height: 30rem;
+  border-radius: 100%;
+}
+
+.cima{
+  display: flex;
+  justify-content: center;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  gap: 10rem;
+}
+
+.baixo{
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+}
+
+.sec3 h2{
+  font-size: 4rem;
+}
+
+.sec3 p{
+  font-size: 2rem;
+}
+
+.sec3 p, h2{
+ text-align: center;
 }
 
