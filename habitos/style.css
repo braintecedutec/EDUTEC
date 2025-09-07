@@ -25,6 +25,13 @@ html {
     --verde-meio-claro: #58C79D;
     --quase-tuquesa: #1E5D56;
     --branco-esverdeado: #F0FDF4;
+    --amarelo: #F8B52D;
+    --cinza-claro: #eaf3ef;
+    --verde-musgo: #61B33C;
+    --azul: #2CA8A2;
+    --verde-verde: #32A852;
+    --azul-claro: #E8F8F8;
+    --verde-esbranquiçado: #F1FCEF;
 }
 
 .logo a{
@@ -35,7 +42,7 @@ hr{
 }
 aside {
     width: 25rem;
-    background-color: #eaf3ef;
+    background-color: var(--cinza-claro);
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -112,6 +119,10 @@ aside {
     padding: 1rem;
   }
 
+  header{
+    padding-top: 2rem;
+  }
+
   header img{
     height: 3rem;
     width: 3rem;
@@ -129,3 +140,87 @@ main{
     background-color: var(--branco-esverdeado);
     padding-left: 3rem;
 }
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+    gap: 5rem;
+    padding-top: 3rem;
+}
+
+.card{
+    margin: 2rem;
+}
+.card h3{
+    font-size: 2.2rem;
+}
+
+.card p{
+    font-size: 1.5rem;
+    text-align: center;
+    padding-bottom: 1rem;
+    color: var(--turquesa-escuro);
+}
+
+.card img{
+    height: 2rem;
+    width: 2rem;
+}
+
+.lado{
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  padding-bottom: 1rem;
+}
+
+.card button{
+    color: white;
+    width: 100%;
+    height: 3rem;
+    border-radius: 0.8rem;
+    border: none;
+}
+
+#amarelo{
+    background-color: white;
+    border-radius: 2rem;
+    box-shadow: 0.2rem 0.2rem 0.8rem rgba(0,0,0,0.3);
+}
+
+#amarelo button{
+    background-color: var(--amarelo);
+}
+
+#verde1{
+    background-color: var(--verde-claro);
+    border-radius: 2rem;
+    box-shadow: 0.2rem 0.2rem 0.8rem rgba(0,0,0,0.3);
+}
+
+#verde1 button{
+    background-color: var(--verde-verde);
+}
+
+#verde2{
+    background-color: var(--verde-esbranquiçado);
+    border-radius: 2rem;
+    box-shadow: 0.2rem 0.2rem 0.8rem rgba(0,0,0,0.3);
+}
+
+#verde2 button{
+    background-color: var(--verde-musgo);
+}
+
+#azul{
+    background-color: var(--azul-claro);
+    border-radius: 2rem;
+    box-shadow: 0.2rem 0.2rem 0.8rem rgba(0,0,0,0.3);
+}
+
+#azul button{
+    background-color: var(--azul);
+}
+
+
