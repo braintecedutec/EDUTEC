@@ -198,8 +198,14 @@ header p{
 }
 
 .humor:hover {
-    transform: scale(1.15); /* aumenta */
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* sombra suave */
+  transform: scale(1.03);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .humor.ativo {
+    border: 0.3rem solid rgb(240, 106, 240);
+    transform: scale(1.2);
   }
 
 .sliders{
@@ -215,53 +221,95 @@ header p{
     margin-bottom: 1rem; 
 }
 
-input[type="range"] {
-    -webkit-appearance: none; /* remove estilo padrão */
-    width: 100%;
-    height: 6px;
-    background: black; /* linha preta */
-    border-radius: 3px;
-    outline: none;
-    cursor: pointer;
+  .sliders {
+    display: flex;
+    gap: 2rem;
+    font-size: 1.4rem;
   }
-  
-  /* Trilho (track) */
-  input[type="range"]::-webkit-slider-runnable-track {
-    height: 6px;
-    background: black;
-    border-radius: 3px;
+
+  .slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  
-  input[type="range"]::-moz-range-track {
-    height: 6px;
-    background: black;
-    border-radius: 3px;
+
+  .slider label {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
   }
-  
-  /* Bolinha (thumb) */
-  input[type="range"]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    background: white;          /* bolinha branca */
-    border: 2px solid black;    /* borda preta */
-    cursor: pointer;
-    margin-top: -6px; /* centraliza no track */
+
+   /* Estilo base do range */
+   input[type="range"]{
+    -webkit-appearance:none;
+    appearance:none;
+    width:20rem;          /* largura da barra */
+    height:0.7rem;        /* altura do track */
+    border-radius:0.4rem;
+    background:transparent; /* track será estilizado pelos pseudos / JS */
+    cursor:pointer;
   }
-  
-  input[type="range"]::-moz-range-thumb {
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    background: white;
-    border: 2px solid black;
-    cursor: pointer;
+
+  /* ===== WebKit (Chrome, Edge, Opera, Safari) ===== */
+  input[type="range"]::-webkit-slider-runnable-track{
+    height:0.7rem;
+    border-radius:0.4rem;
+    /* usa variável --percent setada por JS para dividir a cor preta e cinza */
+    background: linear-gradient(to right,
+                #000 0%,
+                #000 var(--percent,50%),
+                #ccc var(--percent,50%),
+                #ccc 100%);
   }
+
+  input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance:none;
+    appearance:none;
+    width:1.6rem;
+    height:1.6rem;
+    border-radius:50%;
+    background:#fff;      /* bolinha branca */
+    border:0.25rem solid #000; /* borda preta */
+    margin-top:-0.45rem;  /* centraliza a bolinha no track */
+    box-shadow:0 0.2rem 0.4rem rgba(0,0,0,0.12);
+  }
+
+  /* Firefox */
+  input[type="range"]::-moz-range-track{
+    background:#ccc;
+    height:0.7rem;
+    border-radius:0.4rem;
+  }
+
+  input[type="range"]::-moz-range-progress{
+    background:#000; /* parte preenchida no Firefox */
+    height:0.7rem;
+    border-radius:0.4rem;
+  }
+
+  input[type="range"]::-moz-range-thumb{
+    width:1.6rem;
+    height:1.6rem;
+    border-radius:50%;
+    background:#fff;
+    border:0.25rem solid #000;
+    box-shadow:0 0.2rem 0.4rem rgba(0,0,0,0.12);
+  }
+
+  /* acessibilidade visual quando em foco */
+  input[type="range"]:focus{
+    outline:none;
+  }
+  input[type="range"]:focus::-webkit-slider-thumb{ box-shadow:0 0 0.6rem rgba(0,0,0,0.18); }
+  input[type="range"]:focus::-moz-range-thumb{ box-shadow:0 0 0.6rem rgba(0,0,0,0.18); }
+
 
     .perguntas{
         display: grid;
         
+    }
+
+    .label{
+      font-size: 2rem;
     }
   
     .perguntas label{

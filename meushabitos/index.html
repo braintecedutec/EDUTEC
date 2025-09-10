@@ -10,6 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
+        <script src="../meushabitos/script.js" defer></script>
 
     
 </head>
@@ -48,7 +49,7 @@
           <h1>Meus Hábitos</h1>
           <p class="subtitulo">Construa uma rotina saudável um dia de cada vez</p>
         </div>
-        <button class="btn">+ Novo Hábito</button>
+        <button class="btn" id="novo-habito-btn">+ Novo Hábito</button>
       </div>
     
       <!-- Progresso -->
@@ -64,65 +65,29 @@
       </div>
     
       <!-- Grid de Hábitos -->
-      <div class="habitos-grid">
-        <div class="card-habito" style="border-top-color: #2e7d54;">
-          <h3>Beber 2L de água</h3>
-          <p class="descricao">Manter-se hidratado durante todo o dia</p>
-          <div class="status">
-            <span>📅 Diário</span>
-            <span class="dias">0 dias seguidos</span>
-          </div>
-          <div class="progress-bar"><div class="progress-fill" style="width: 0%;"></div></div>
-        </div>
+      <div class="habitos-grid" id="habitos-container">
+        
     
-        <div class="card-habito" style="border-top-color: #7a3fcf;">
-          <h3>Meditar 10 minutos</h3>
-          <p class="descricao">Prática diária de mindfulness</p>
-          <div class="status">
-            <span>📅 Diário</span>
-            <span class="dias">0 dias seguidos</span>
-          </div>
-          <div class="progress-bar"><div class="progress-fill" style="width: 0%;"></div></div>
-        </div>
-    
-        <div class="card-habito" style="border-top-color: #3f7fcf;">
-          <h3>Caminhar 30 minutos</h3>
-          <p class="descricao">Atividade física diária</p>
-          <div class="status">
-            <span>📅 Diário</span>
-            <span class="dias">0 dias seguidos</span>
-          </div>
-          <div class="progress-bar"><div class="progress-fill" style="width: 0%;"></div></div>
-        </div>
-    
-        <div class="card-habito" style="border-top-color: #d4a23f;">
-          <h3>Ler antes de dormir</h3>
-          <p class="descricao">Leitura para relaxar e aprender</p>
-          <div class="status">
-            <span>📅 Diário</span>
-            <span class="dias">0 dias seguidos</span>
-          </div>
-          <div class="progress-bar"><div class="progress-fill" style="width: 0%;"></div></div>
-        </div>
-    
-        <div class="card-habito" style="border-top-color: #2e7d54;">
-          <h3>Gratidão diária</h3>
-          <p class="descricao">Escrever 3 coisas pelas quais sou grato</p>
-          <div class="status">
-            <span>📅 Diário</span>
-            <span class="dias">0 dias seguidos</span>
-          </div>
-          <div class="progress-bar"><div class="progress-fill" style="width: 0%;"></div></div>
-        </div>
-    
-        <div class="card-habito" style="border-top-color: #8e44ad;">
-          <h3>fffad</h3>
-          <p class="descricao">asdas</p>
-          <div class="status">
-            <span>📅 Semanal</span>
-            <span class="dias">0 dias seguidos</span>
-          </div>
-          <div class="progress-bar"><div class="progress-fill" style="width: 0%;"></div></div>
+        
+      </div>
+
+      <div id="habito-modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Criar Novo Hábito</h2>
+          <input type="text" id="nome" placeholder="Nome do Hábito">
+          <input type="text" id="descricao" placeholder="Descrição (opcional)">
+          <select id="categoria">
+            <option value="">Selecione uma categoria</option>
+            <option value="Saúde">Saúde</option>
+            <option value="Exercício">Exercício</option>
+            <option value="Produtividade">Produtividade</option>
+          </select>
+          <select id="frequencia">
+            <option value="Diário">Diário</option>
+            <option value="Semanal">Semanal</option>
+          </select>
+          <button id="criar-habito-btn">Criar Hábito</button>
         </div>
       </div>
     </main>

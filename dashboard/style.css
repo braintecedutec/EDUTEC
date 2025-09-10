@@ -215,14 +215,13 @@ main{
     background-color: var(--verde-musgo);
 }
 
-#azul{
-    background-color: var(--azul-claro);
-    border-radius: 2rem;
-    box-shadow: 0.2rem 0.2rem 0.8rem rgba(0,0,0,0.3);
+.cards button{
+  cursor: pointer;
 }
 
-#azul button{
-    background-color: var(--azul);
+.cards a{
+  text-decoration: none;
+  color: white;
 }
 
 .atividades-reflexao{

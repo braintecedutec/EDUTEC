@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Braintec</title>
-    <link rel="stylesheet" href="./style.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="./style.css" >
+    <script src="../humordiario/script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -91,25 +91,25 @@
                     </div>
 
                     <div class="sliders">
-                    <div class="slider">
-                        <label>⚡ Nível de Energia: 3</label>
-                        <input type="range" min="1" max="5" value="3">
-                    </div>
+                        <div class="slider">
+                            <div class="label">⚡ Nível de Energia: <span id="valor-energia">3</span></div>
+                            <input id="energia" type="range" min="1" max="5" value="1" />
+                          </div>
 
-                    <div class="slider">
-                        <label>🔥 Nível de Estresse: 3</label>
-                        <input type="range" min="1" max="5" value="3">
-                    </div>
+                          <div class="slider">
+                            <div class="label">🔥 Nível de Estresse: <span id="valor-estresse">3</span></div>
+                            <input id="estresse" type="range" min="1" max="5" value="1" />
+                          </div>
                 </div>
                     <div class="perguntas">
                     <label>Pelo que você é grato hoje?</label>
-                    <textarea rows="4" placeholder="  Ex: Pelo café delicioso, pela manhã ensolarada..."></textarea>
+                    <textarea id="gratidao" rows="4" placeholder="  Ex: Pelo café delicioso, pela manhã ensolarada..."></textarea>
     
 
                     <label>Observações (opcional)</label>
-                    <textarea rows="4" placeholder="  Como foi seu dia? O que influenciou seu humor?"></textarea>
+                    <textarea  id="observacoes" rows="4" placeholder="  Como foi seu dia? O que influenciou seu humor?"></textarea>
 
-                    <button class="btn">Registrar Humor</button>
+                    <button class="btn" id="registrar-humor">Registrar Humor</button>
                 </div>
                 </div>
 
