@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg, var(--verde-meio-claro), var(--verde-verde));
+    color: #fff;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  html{
+    font-size: 62.5%; /* 62.5% de 16px = 10px */
+  }
+
+  :root{
+    --turquesa-escuro: #103b34;
+    --hover: #39867c;
+    --verde-claro: #C9EAC1;
+    --verde-meio-claro: #58C79D;
+    --quase-tuquesa: #1E5D56;
+    --branco-esverdeado: #F0FDF4;
+    --amarelo: #F8B52D;
+    --cinza-claro: #eaf3ef;
+    --verde-musgo: #61B33C;
+    --azul: #2CA8A2;
+    --verde-verde: #32A852;
+    --azul-claro: #E8F8F8;
+    --verde-esbranquiçado: #F1FCEF;
+}
+
+  .container {
+    background: var(--quase-tuquesa);
+    padding: 3rem;
+    border-radius: 1.2rem;
+    width: 80rem;
+    text-align: center;
+    box-shadow: 0 0 1.5rem rgba(0,0,0,0.3);
+    position: relative;
+  }
+
+  .container p{
+    font-size: 2rem;
+  }
+
+  h1 { 
+    margin-bottom: 1.2rem; 
+    }
+
+  .btn {
+    padding: 1.2rem 1.8rem;
+    border-radius: 0.8rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1.6rem;
+    margin: 0..8rem 0;
+  }
+
+  button:hover{
+    transform: scale(1.03);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  a:hover{
+    transform: scale(1.03);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .start-btn {
+    background: #4caf50;
+    color: #fff;
+    width: 100%;
+  }
+
+  /* botões fixos no topo (âncora + botão) */
+  .top-btn {
+    position: absolute;
+    top: 1.5rem;
+    padding: 0.8rem 1.2rem;
+    font-size: 1.4rem;
+    border-radius: 0.6rem;
+    text-decoration: none;
+    text-align: center;
+    z-index: 9999;
+    color: white;
+  }
+
+
+  #home-btn { 
+    left: 1.5rem; 
+    background: var(--quase-tuquesa); 
+}
+
+  #restart-btn { 
+    right: 1.5rem; 
+    background: #e53935; 
+    border: none; 
+    cursor: pointer; 
+    display: none; /* só aparecem no quiz */
+}
+
+  .question { margin: 1.6rem 0; font-size: 1.8rem; }
+  .options button {
+    display: block;
+    width: 100%;
+    margin: 0.8rem 0;
+    background: var(--azul);
+    color: #fff;
+    border: none;
+    padding: 1rem;
+    border-radius: 0.8rem;
+    cursor: pointer;
+  }
+  .correct { background:#4caf50 !important; }
+  .wrong { background:#f44336 !important; }
+
+  #next-btn {
+    background:#ff9800;
+    color:#fff;
+    display:none;
+    padding:1rem;
+    border:none;
+    border-radius:0.8rem;
+    cursor:pointer;
+    width:100%;
+    margin-top:1rem;
+  }
+
+  #result { margin-top:1.2rem; font-size:1.6rem; }

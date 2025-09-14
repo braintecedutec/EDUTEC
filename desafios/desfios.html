@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Braintec</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../desafios/style.css">
+    <script src="../desafios/script.js" defer></script>
+</head>
+<body>
+
+    <!-- Botões fixos -->
+  <a id="home-btn" class="top-btn" href="../index.html">Início</a>
+  <button id="restart-btn" class="top-btn">Recomeçar</button>
+
+  <!-- Tela inicial -->
+  <div class="container" id="start-screen">
+    <h1>Quiz Saúde Mental & Física</h1>
+    <p>Teste seus conhecimentos — pronto para começar?</p>
+    <button id="start-btn" class="btn start-btn">Iniciar Quiz</button>
+  </div>
+
+  <!-- Quiz -->
+  <div class="container" id="quiz" style="display:none;">
+    <div class="question" id="question"></div>
+    <div class="options" id="options"></div>
+    <button id="next-btn">Próxima</button>
+    <div id="result"></div>
+  </div>
+  
+</body>
+</html>
