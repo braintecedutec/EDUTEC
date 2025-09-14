@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 
-.tudo{
+
+.sec1, .sec2{
   padding: 0 5rem 0 5rem;
   margin: auto;
 }
@@ -16,6 +17,7 @@ body {
 
 html {
   font-size: 62.5%; /* 62.5% de 16px = 10px */
+  scroll-behavior: smooth;
 }
 
 :root{
@@ -28,50 +30,66 @@ nav{
   align-items: center;
   display: flex;
   gap: 2.5rem;
+  padding-right: 10rem;
+  font-size: 5rem;
 }
 
 header{
  display: flex;
  justify-content: space-between;
  align-items: center;
-  display: flex;
   gap: 1rem;
   align-items: baseline;
-  font-size: 4rem;
+  background-image: url(./imagens/header.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  height: 70rem;
 }
+
+header div{
+  display: flex;
+  flex-direction: column;
+}
+
 
 header a:hover{
   color: var(--hover);
+  transform: scale(1.03);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-nav img{
-  width: 3rem;
-  height: 3rem;
-}
 
-nav button{
+header button{
+  margin-top: 30rem;
+  padding: 2rem;
   background: none;
-  border: none;
   cursor: pointer;
+  margin-left: 10rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: white;
+  border: solid, .2rem, white;
+}
+
+
+
+header button:hover{
+  transform: scale(1.03);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 #braintec{
- font-size: 10rem; 
+ font-size: 13rem; 
+ padding-left: 10rem;
 }
 
 
 a{
   text-decoration: none;
-  color: var(--turquesa-escuro);
+  color: white;
 }
 
-#imagemMulher{
-  width: 100rem;
-  height: 50rem;
-  display: block;
-  margin: 0 auto; /* centraliza horizontalmente */
-  
-}
 
 .sec1 h1{
   font-size: 9rem;
@@ -154,6 +172,11 @@ a{
   height: 5rem;
   font-size: 2.3rem;
   cursor: pointer;
+}
+
+.sec2 button:hover{
+  transform: scale(1.03);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .sec3{

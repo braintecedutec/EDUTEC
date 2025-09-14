@@ -36,6 +36,8 @@ header a{
 
 header a:hover{
     color: var(--hover);
+    transform: scale(1.03);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 nav a{

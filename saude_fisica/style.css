@@ -36,6 +36,8 @@ header a{
 
 header a:hover{
     color: var(--hover);
+    transform: scale(1.03);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 nav a{
@@ -98,18 +100,7 @@ header{
     padding-bottom: 6rem;
   }
 
-.sec1 button{
-    background-color: var(--turquesa-escuro);
-    color: white;
-    border: none;
-    border-radius: 1.5rem;
-    width: 20rem;
-    height: 5rem;
-    font-size: 2rem;
-    cursor: pointer;
-    display: block;         /* ocupa a linha toda */
-    margin: 0rem auto;      /* centraliza automaticamente */
-  }
+
 
 .sec1 a{
   text-decoration: none;
@@ -134,7 +125,12 @@ header{
   padding-top: 2rem;
   max-width: 30rem;
   height: 35rem;
-  margin-bottom: 3rem;
+  margin: 3rem;
+ }
+
+ .item:hover{
+  transform: scale(1.03);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
  }
 
  .item h3{

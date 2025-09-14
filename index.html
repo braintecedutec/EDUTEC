@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Braintec</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -16,58 +16,63 @@
 
 <body>
 
-    <section class="tudo">
 
-        <header>
+    <header>
+
+        <div>
             <a href="index.html" id="braintec">Braintec</a>
 
-            <nav>
-                <a href="desafios/desafios.html">Desafios</a>
-                <a href="dashboard/habitos.html">Hábitos</a>
-                <a href="ajuda/ajuda.html">Ajuda</a>
-            </nav>
+            <button id="btn-ir">começar</button>
 
-        </header>
+        </div>
 
-        <main>
-            <section class="sec1">
-                <img src="imagens/mulher1.png" alt="" id="imagemMulher">
-                <h1>Saúde Mental e Física</h1>
-                <p>Aprenda sobre saúde mental e física e encontre dicas para melhorar o seu bem-estar.</p>
-            </section>
+        <nav>
+            <a href="desafios/desafios.html">Desafios</a>
+            <a href="dashboard/habitos.html">Hábitos</a>
+            <a href="ajuda/ajuda.html">Ajuda</a>
+        </nav>
 
-            <section class="sec2">
+    </header>
 
-                <div class="linha">
+    <main>
+        <section class="sec1" id="inicio">
 
-                    <div class="item">
+            <h1>Saúde Mental e Física</h1>
+            <p>Aprenda sobre saúde mental e física e encontre dicas para melhorar o seu bem-estar.</p>
+        </section>
 
-                        <h2>Saúde Mental</h2>
-                        <img src="imagens/mulhertriste.png" alt="">
-                        <p>Cuide da mente e viva com mais equilíbrio e harmonia.</p>
-                        <a href="saude_mental/saude_mental.html">
-                            <button>Saiba mais</button>
-                        </a>
+        <section class="sec2">
 
-                    </div>
+            <div class="linha">
 
+                <div class="item">
 
-                    <div class="item">
-
-                        <h2>Saúde Física</h2>
-                        <img src="imagens/homemcorrendo.png" alt="">
-                        <p>Saúde física é o bom funcionamento do corpo.</p>
-                        <a href="saude_fisica/saude_fisica.html">
-                            <button>Saiba mais</button>
-                        </a>
-
-                    </div>
+                    <h2>Saúde Mental</h2>
+                    <img src="imagens/mulhertriste.png" alt="">
+                    <p>Cuide da mente e viva com mais equilíbrio e harmonia.</p>
+                    <a href="saude_mental/saude_mental.html">
+                        <button>Saiba mais</button>
+                    </a>
 
                 </div>
-            </section>
 
-        </main>
-    </section>
+
+                <div class="item">
+
+                    <h2>Saúde Física</h2>
+                    <img src="imagens/homemcorrendo.png" alt="">
+                    <p>Saúde física é o bom funcionamento do corpo.</p>
+                    <a href="saude_fisica/saude_fisica.html">
+                        <button>Saiba mais</button>
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
 
     <section class="sec3">
         <div>
