@@ -10,6 +10,7 @@ body {
 
 html {
     font-size: 62.5%; /* 62.5% de 16px = 10px */
+    scroll-behavior: smooth;
   }
 
 :root{
@@ -19,8 +20,8 @@ html {
 }
 
 
-main{
-    padding: 0 5rem;
+.sec1, .sec2, .sec4{
+  padding: 0 5rem;
 }
 
 header{
@@ -116,17 +117,14 @@ header{
 
 .sec2{
   padding-top: 7rem;
+  margin-bottom: 7rem;
  }
 
 .sec2 img{
-  width: 35rem;
+  width: 20rem;
   padding-bottom: 1rem
  }
 
- .linha{
-  display: flex;
-  gap: 4rem;
- }
 
  .item{
   background-color: var(--cinza);
@@ -134,15 +132,18 @@ header{
   box-shadow: 0.8rem 0.8rem 1.2rem rgba(0,0,0,0.3);
   text-align: center;
   padding-top: 2rem;
+  max-width: 30rem;
+  height: 35rem;
+  margin-bottom: 3rem;
  }
 
  .item h3{
-  font-size: 4rem;
+  font-size: 3rem;
   color: var(--turquesa-escuro);
   padding-bottom: 2rem;
  }
 
- .linha button{
+ .siema button{
   background: none;
   border: none;
   cursor: pointer;
@@ -150,12 +151,16 @@ header{
  }
 
  .item p{
-  font-size: 3rem;
+  font-size: 1.5rem;
+  padding-bottom: 2rem;
  }
 
- .sec3{
-  padding-top: 10rem;
+ .item p, .item h3{
+  padding-left: 2rem;
+  padding-right: 2rem;
+
  }
+
 
 .sec3 img{
   width: 32rem;
@@ -163,16 +168,28 @@ header{
   border-radius: 4rem;
 } 
 
+
 .container{
-  display: flex;           /* Coloca lado a lado */
-  align-items: flex-start; /* Alinha pelo topo */
+  display: flex;
+  align-items: flex-start;
   gap: 20px;    
   padding-bottom: 5rem;
+  background-color: var(--turquesa-escuro);
+  border-left: none;
+  border-right: none; 
+}
+
+.container img, .container p, .container h2{
+  margin-inline: 4.5rem;
+  margin-top: 2rem;
+}
+
+.container p, .container h2{
+  color: white;
 }
 
 .textos2 h2{
   font-size: 7rem;
-  color: var(--turquesa-escuro);
   padding-top: 2rem;
 }
 
