@@ -198,34 +198,44 @@ header{
   padding-left: 3rem;
 }
 
+.sec4{
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+}
+
 .sec4 h1{
   font-size: 10rem;
   text-transform: uppercase;
   color: var(--turquesa-escuro);
-  text-align: center ;
 }
 
 .sec4 h2{
   font-size: 4rem;
   margin-top: -0.5rem;
-  text-align: center ;
 }
 
-.linha2{
-  display: flex;
-  justify-content: space-between;
-  padding-top: 10rem;
-  gap: 10rem;
+.sec4 button{
+  text-align: center;
+  border: solid, 0.2rem, var(--turquesa-escuro);
+  background-color: white;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  padding: 1rem;
+  padding-inline: 3rem;
+  cursor: pointer;
 }
 
-.item2 h3{
-  font-size: 3rem;
-  color: var(--turquesa-escuro);
-  padding-bottom: 2rem;
+.sec4 button:hover{
+  transform: scale(1.03);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.item2 p{
-  font-size: 1.5rem;
+.sec4 a{
+  text-decoration: none;
+  text-align: center;
+  
 }
 
 

@@ -14,23 +14,24 @@
 </head>
 <body>
 
-    <!-- Botões fixos -->
-  <a id="home-btn" class="top-btn" href="../index.html">Início</a>
-  <button id="restart-btn" class="top-btn">Recomeçar</button>
-
-  <!-- Tela inicial -->
-  <div class="container" id="start-screen">
-    <h1>Quiz Saúde Mental & Física</h1>
-    <p>Teste seus conhecimentos — pronto para começar?</p>
-    <button id="start-btn" class="btn start-btn">Iniciar Quiz</button>
+  <div class="top-buttons">
+    <button id="home-btn" > <a href="../index.html">Início</a></button>
+    <button id="restart-btn" style="display:none;">Recomeçar</button>
   </div>
 
-  <!-- Quiz -->
-  <div class="container" id="quiz" style="display:none;">
-    <div class="question" id="question"></div>
-    <div class="options" id="options"></div>
-    <button id="next-btn">Próxima</button>
-    <div id="result"></div>
+
+  <div id="start-screen">
+    <h1>Quiz sobre Saúde Física e Mental</h1>
+    <button id="start-btn">Começar</button>
+  </div>
+
+  <div id="quiz" style="display:none;">
+    <div class="quiz-container">
+      <h2 id="question"></h2>
+      <div id="options" class="options-grid"></div>
+      <p id="result"></p>
+      <button id="next-btn" style="display:none;">Próxima</button>
+    </div>
   </div>
   
 </body>
